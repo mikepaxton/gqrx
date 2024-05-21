@@ -1,15 +1,18 @@
 FROM debian:latest
 
+# Set compiler optimization flags
+ENV CXXFLAGS='-O2 -march=native -mtune=native'
+ENV CFLAGS='-O2 -march=native -mtune=native'
 
 # Supporting packages
 RUN echo "keyboard-configuration keyboard-configuration/layoutcode string en" | debconf-set-selections && \
     apt-get update && \
     apt-get install -y git \
                        pulseaudio \
+                       avahi-utils \
                        xserver-xorg-video-all \
                        libgl1-mesa-glx \
                        libgl1-mesa-dri
-
 
 # Get build dependencies
 RUN apt-get update && \
