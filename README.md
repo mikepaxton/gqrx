@@ -50,3 +50,7 @@ cp gqrx.desktop ~/.local/share/applications
 Finally, from the application launcher, click on GQRX and let it launch.
 It might take a few seconds for the docker container to start up
 and the application to start.
+
+## Bookmarks
+You can access GQRX bookmark file from ~/.config/gqrx
+
