@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Gqrx
+Comment=Software defined radio receiver powered by GNU Radio and Qt
+Exec=/usr/bin/docker compose -f /home/admin/source/gqrx/docker-compose.yml up -d
+Icon=/home/admin/Pictures/icons/gqrx.png
+Terminal=false
+Categories=AudioVideo;HamRadio;
