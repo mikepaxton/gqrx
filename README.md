@@ -1,6 +1,12 @@
 ### gqrx
 [GQRX](https://gqrx.dk) SDR software running inside Docker
 
+## Summary
+1. Build a GQRX docker image.
+2. Create a GQRX docker container.
+3. Launch and start the GQRX container from the application menu.
+4. When done with GQRX, closing the app will shutdown the container.
+
 ## Installation
 1. Plug in your RTL-SDR dongle.
 2. Clone the repository and run the setup script:
