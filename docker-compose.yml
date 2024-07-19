@@ -16,4 +16,4 @@ services:
       - USER_UID=${UID}
       - USER_GID=${GID}
     network_mode: "host"
-    entrypoint: ["/usr/local/bin/gqrx"]
+    entrypoint: ["/start-gqrx.sh"]
