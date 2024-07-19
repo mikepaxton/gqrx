@@ -17,6 +17,7 @@
     sh run.sh
     ```
    If the image builds successfully, GQRX will start and present you with the application window. Close the application to complete the image build.
+   If a pulseaudio error comes up, run pulseaudio --start.  Then, choose the correct audio output in settings -> configure audio devices.  In case of CyberDeck it should be HDMI output.
 
 ## Run docker compose up
 Now, run docker compose up -d to create the container. We will later be launching the container from the applications launcher.
