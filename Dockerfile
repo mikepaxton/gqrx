@@ -42,7 +42,6 @@ RUN cd /opt/gqrx/src/build && \
     make && \
     make install
 
-COPY start-gqrx.sh /start-gqrx.sh
-RUN chmod +x /start-gqrx.sh
+
 ENV PULSE_SERVER /run/pulse/native
 CMD ["/usr/local/bin/gqrx"]
